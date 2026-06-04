@@ -1,0 +1,56 @@
+# =========================================
+# Visual Studio / IDEs
+# =========================================
+.vs/
+.vscode/
+.idea/
+*.user
+*.userosscache
+*.sln.docstates
+
+# =========================================
+# Build Artifacts (Crucial for all layers)
+# =========================================
+[Bb]in/
+[Oo]bj/
+TestResults/
+*.TestResults
+
+# =========================================
+# Security & Configuration
+# =========================================
+# NEVER commit development or local appsettings
+appsettings.Development.json
+appsettings.Local.json
+# Ignore local environment variables
+.env
+.env.local
+
+# =========================================
+# Databases & Logs
+# =========================================
+# Ignore local SQL Server/SQLite databases
+*.mdf
+*.ldf
+*.ndf
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+# Ignore application log files
+*.log
+
+# =========================================
+# NuGet & Dependencies
+# =========================================
+*.nupkg
+packages/
+
+# =========================================
+# OS Generated Files
+# =========================================
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db

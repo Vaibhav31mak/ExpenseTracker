@@ -1,0 +1,48 @@
+@Host = https://localhost:5179
+
+###
+GET {{Host}}/api/expenses
+Accept: application/json
+
+###
+GET {{Host}}/api/expenses/1
+Accept: application/json
+
+###
+GET {{Host}}/api/expenses/category/Food
+Accept: application/json
+
+###
+GET {{Host}}/api/expenses/range?start=2026-01-01&end=2026-12-31
+Accept: application/json
+
+###
+GET {{Host}}/api/expenses/summary/2026
+Accept: application/json
+
+###
+POST {{Host}}/api/expenses
+Content-Type: application/json
+
+{
+  "title": "Laptop Purchase",
+  "amount": 75000,
+  "date": "2026-06-01",
+  "category": "Education",
+  "notes": "College project work"
+}
+
+###
+PUT {{Host}}/api/expenses/1
+Content-Type: application/json
+
+{
+  "title": "Updated Laptop Purchase",
+  "amount": 80000,
+  "date": "2026-06-01",
+  "category": "Education",
+  "notes": "Updated expense"
+}
+
+###
+DELETE {{Host}}/api/expenses/1

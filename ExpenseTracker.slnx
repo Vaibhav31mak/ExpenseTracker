@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+  </Folder>
+  <Project Path="ExpenseTracker.API/ExpenseTracker.API.csproj" />
+  <Project Path="ExpenseTracker.Tests.NUnit/ExpenseTracker.Tests.NUnit.csproj" />
+  <Project Path="ExpenseTracker.Tests.XUnit/ExpenseTracker.Tests.XUnit.csproj" />
+</Solution>
